@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vq-c2-edL">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="ghZ-jf-IyY">
+                                        <connections>
+                                            <action selector="startAction:" destination="BYZ-38-t0r" id="zPg-Rx-dNY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oKP-NZ-kFa"/>
+                                    <barButtonItem systemItem="pause" id="ODI-Tm-6az">
+                                        <connections>
+                                            <action selector="pauseAction:" destination="BYZ-38-t0r" id="Zmu-xc-m5k"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bmt-CI-xHt"/>
+                                    <barButtonItem systemItem="stop" id="2bo-mP-L9j">
+                                        <connections>
+                                            <action selector="stopAction:" destination="BYZ-38-t0r" id="gGi-Ve-XqM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.43457542539999999" green="0.0" blue="0.40169189309999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lb-gO-Bog">
+                                <rect key="frame" x="0.0" y="289" width="600" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-QG-rtm">
+                                <rect key="frame" x="0.0" y="20" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.43457542539267013" green="0.0" blue="0.40169189310497472" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_cairo-clock_23728.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkY-X5-Y3U">
+                                <rect key="frame" x="0.0" y="112" width="600" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92819745188059177" blue="0.9694713933343837" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8lb-gO-Bog" firstAttribute="top" secondItem="mkY-X5-Y3U" secondAttribute="bottom" constant="49" id="2uK-ag-jQO"/>
+                            <constraint firstItem="8lb-gO-Bog" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3Rr-li-hrY"/>
+                            <constraint firstItem="mkY-X5-Y3U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="6gc-Xu-mH7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Vq-c2-edL" secondAttribute="trailing" constant="-20" id="M4u-VW-Gb0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bg8-QG-rtm" secondAttribute="trailing" constant="-20" id="Q6a-c0-Sh8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Vq-c2-edL" secondAttribute="bottom" id="RT7-FS-Ctv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mkY-X5-Y3U" secondAttribute="trailing" constant="-20" id="ZcV-OL-cP9"/>
+                            <constraint firstItem="bg8-QG-rtm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ats-tR-m0s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8lb-gO-Bog" secondAttribute="trailing" constant="-20" id="iGR-LZ-ftY"/>
+                            <constraint firstItem="bg8-QG-rtm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ilS-cx-sOv"/>
+                            <constraint firstItem="mkY-X5-Y3U" firstAttribute="top" secondItem="bg8-QG-rtm" secondAttribute="bottom" constant="32" id="kEz-HU-Aet"/>
+                            <constraint firstItem="3Vq-c2-edL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kul-FF-0DU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="ODI-Tm-6az" id="1hR-Ml-vRX"/>
+                        <outlet property="playButton" destination="ghZ-jf-IyY" id="mt7-ye-cAB"/>
+                        <outlet property="stopButton" destination="2bo-mP-L9j" id="uzy-jE-bVx"/>
+                        <outlet property="timeLabel" destination="8lb-gO-Bog" id="9Ht-jj-PP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="if_cairo-clock_23728.png" width="128" height="128"/>
+    </resources>
+</document>
