@@ -15,6 +15,8 @@
 		496CFB041F3CC54D005C4EBC /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFB031F3CC54D005C4EBC /* Tic_Tac_ToeTests.swift */; };
 		496CFB0F1F3CC54D005C4EBC /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFB0E1F3CC54D005C4EBC /* Tic_Tac_ToeUITests.swift */; };
 		496CFB1D1F3CE06C005C4EBC /* img-thing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 496CFB1C1F3CE06C005C4EBC /* img-thing.jpg */; };
+		49B14A051F3F45BE00BE990B /* rippled_wall_background_01_hd_pictures_169887.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49B14A041F3F45BE00BE990B /* rippled_wall_background_01_hd_pictures_169887.jpg */; };
+		49B14A071F3F468C00BE990B /* game-clip-art-clip-art-board-g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49B14A061F3F468C00BE990B /* game-clip-art-clip-art-board-g.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		496CFB0E1F3CC54D005C4EBC /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		496CFB101F3CC54D005C4EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496CFB1C1F3CE06C005C4EBC /* img-thing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img-thing.jpg"; sourceTree = "<group>"; };
+		49B14A041F3F45BE00BE990B /* rippled_wall_background_01_hd_pictures_169887.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rippled_wall_background_01_hd_pictures_169887.jpg; sourceTree = "<group>"; };
+		49B14A061F3F468C00BE990B /* game-clip-art-clip-art-board-g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "game-clip-art-clip-art-board-g.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				496CFAF21F3CC54D005C4EBC /* Main.storyboard */,
 				496CFAF51F3CC54D005C4EBC /* Assets.xcassets */,
 				496CFB1C1F3CE06C005C4EBC /* img-thing.jpg */,
+				49B14A041F3F45BE00BE990B /* rippled_wall_background_01_hd_pictures_169887.jpg */,
+				49B14A061F3F468C00BE990B /* game-clip-art-clip-art-board-g.jpg */,
 				496CFAF71F3CC54D005C4EBC /* LaunchScreen.storyboard */,
 				496CFAFA1F3CC54D005C4EBC /* Info.plist */,
 			);
@@ -234,7 +240,9 @@
 			files = (
 				496CFB1D1F3CE06C005C4EBC /* img-thing.jpg in Resources */,
 				496CFAF91F3CC54D005C4EBC /* LaunchScreen.storyboard in Resources */,
+				49B14A051F3F45BE00BE990B /* rippled_wall_background_01_hd_pictures_169887.jpg in Resources */,
 				496CFAF61F3CC54D005C4EBC /* Assets.xcassets in Resources */,
+				49B14A071F3F468C00BE990B /* game-clip-art-clip-art-board-g.jpg in Resources */,
 				496CFAF41F3CC54D005C4EBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +496,7 @@
 				496CFB151F3CC54D005C4EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496CFB161F3CC54D005C4EBC /* Build configuration list for PBXNativeTarget "Tic Tac ToeTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				496CFB181F3CC54D005C4EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496CFB191F3CC54D005C4EBC /* Build configuration list for PBXNativeTarget "Tic Tac ToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				496CFB1B1F3CC54D005C4EBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

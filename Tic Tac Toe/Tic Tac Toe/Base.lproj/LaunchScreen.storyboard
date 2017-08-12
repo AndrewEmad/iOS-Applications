@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +18,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rippled_wall_background_01_hd_pictures_169887.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MwL-ex-abp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game-clip-art-clip-art-board-g.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WKm-c7-JXy">
+                                <rect key="frame" x="150" y="157" width="300" height="286"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIC TAC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wj1-mh-Rgz">
+                                <rect key="frame" x="163" y="61" width="275" height="136"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" red="0.16030253459999999" green="0.1159085846" blue="0.5321907723" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcH-eL-Gli">
+                                <rect key="frame" x="227" y="451" width="147" height="136"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.051290923320000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WKm-c7-JXy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0F1-ch-lR7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MwL-ex-abp" secondAttribute="bottom" id="8PM-cC-HbP"/>
+                            <constraint firstItem="WKm-c7-JXy" firstAttribute="height" secondItem="MwL-ex-abp" secondAttribute="height" multiplier="0.5" constant="-14" id="AcQ-Zg-pQn"/>
+                            <constraint firstItem="WKm-c7-JXy" firstAttribute="width" secondItem="MwL-ex-abp" secondAttribute="width" multiplier="0.5" id="MEa-tz-3eg"/>
+                            <constraint firstItem="MwL-ex-abp" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="Oyv-wf-oSk"/>
+                            <constraint firstItem="rcH-eL-Gli" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QFu-1Z-Evi"/>
+                            <constraint firstItem="WKm-c7-JXy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qt3-7m-D1M"/>
+                            <constraint firstItem="MwL-ex-abp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="cKh-WD-8CM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MwL-ex-abp" secondAttribute="trailing" constant="-20" id="gL9-Nz-8dd"/>
+                            <constraint firstItem="rcH-eL-Gli" firstAttribute="top" secondItem="WKm-c7-JXy" secondAttribute="bottom" constant="8" id="i1K-6J-Vkf"/>
+                            <constraint firstItem="WKm-c7-JXy" firstAttribute="top" secondItem="wj1-mh-Rgz" secondAttribute="bottom" constant="-40" id="kZd-6z-0pI"/>
+                            <constraint firstItem="wj1-mh-Rgz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kxr-B8-MI8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +60,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="game-clip-art-clip-art-board-g.jpg" width="500" height="500"/>
+        <image name="rippled_wall_background_01_hd_pictures_169887.jpg" width="600" height="398"/>
+    </resources>
 </document>
